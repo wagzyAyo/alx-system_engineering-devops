@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# Print Best School 10times except on 4th iteration: bad luck and on 8th iteration: good luck
+
+count=1
+while [[ $count -le 10 ]]
+do
+    if [[ $count == 4 ]];
+    then
+        echo "bad luck"
+    elif [[ $count == 8 ]];
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+    ((count++))
+done
+    
