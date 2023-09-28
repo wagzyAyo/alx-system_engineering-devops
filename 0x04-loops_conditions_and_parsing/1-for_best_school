@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#echo best school 10 times
+# print Best school 10 times using for loop
 
 var="Best School"
 for num in {1..10}
