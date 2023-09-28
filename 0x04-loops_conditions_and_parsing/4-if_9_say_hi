@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Prints Best School ten times on the 9th iteraion add hi on a new line
+
+count=1
+while ((count <= 10))
+do
+    if [[ $count == 9 ]];
+    then
+        echo "Best School"
+	echo "Hi"
+    else
+        echo "Best School"
+    fi
+    ((count++))
+done

@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # print Best school 10 times using for loop
 
-var="Best School"
 for ((x=1;x<=10;x++))
 do
-    echo $var
+    echo "Best School"
 done
