@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script to connect to server without password
+
+Host 98.98.98.98
+    HostName 98.98.98.98
+    User ubuntu
+    IdentifyFile ~/.ssh/school
+    PasswordAuthentication no
