@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 #install and configure HAProxy on lb-01 server
 
 sudo apt-get -y update
