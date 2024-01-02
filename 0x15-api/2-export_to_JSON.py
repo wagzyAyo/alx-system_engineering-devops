@@ -19,7 +19,7 @@ if __name__ == '__main__':
     new_list = []
     for todo in todos:
         dict = {'task': todo['title'], 'completed': todo['completed'],
-                'username':username}
+                'username': username}
         new_list.append(dict)
 
     filename = '{}.json'.format(id)
