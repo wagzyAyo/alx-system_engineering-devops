@@ -12,14 +12,15 @@ if __name__ == '__main__':
     response = requests.get('{}users/{}'
                             .format(end_point, id)).json()
     name = response["name"]
+    username = response['username']
 
     todos = requests.get('{}todos?userId={}'.
                          format(end_point, id)).json()
     new_list = []
     for todo in todos:
-        new_list.append([id,name,todo['completed'],todo['title']])
+        new_list.append([id, username, todo['completed'], todo['title']])
     file_name = '{}.csv'.format(id)
-    with open(file=file_name,mode='w') as file:
+    with open(file=file_name, mode='w') as file:
         write = csv.writer(file, delimiter=',',
                            quotechar='"', quoting=csv.QUOTE_ALL)
         for rec in new_list:
